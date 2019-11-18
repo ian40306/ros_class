@@ -1,9 +1,9 @@
 sudo apt update
 sudo apt dist-upgrade -y
 mkdir ~/.ssh
-cdmod 777 ~/.ssh
+chmod 777 ~/.ssh
 echo "HostKeyAlgorithms ssh-rsa">>~/.ssh/config
-cp -r /home/ubuntu/duckietown/ .
+sudo cp -r /home/ubuntu/duckietown/ .
 echo "source ~/duckietown/environment.sh">>~/.bashrc
 cd ~/duckietown/catkin_ws/
 catkin_make
