@@ -1,3 +1,4 @@
+cd
 git clone https://github.com/duckietown/duckiefleet.git
 echo "hostname: $1">>~/duckiefleet/robots/taiwan/$1.robot.yaml
 echo "username: $2">>~/duckiefleet/robots/taiwan/$1.robot.yaml
